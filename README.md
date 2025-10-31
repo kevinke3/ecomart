@@ -18,11 +18,24 @@ EcoMart is an eco-friendly marketplace dashboard that helps users track and mana
 ## Project Structure
 
 ```
+├── images/       # Screenshots and images
 ├── index.html    # Main entry point
 ├── styles.css    # Stylesheet for the dashboard
 ├── script.js     # Core functionality and interactivity
 └── README.md     # Project documentation
 ```
+
+## Screenshots
+
+![Dashboard Overview](images/dashboard-overview.png)
+
+To add a screenshot:
+1. Take a screenshot of your dashboard
+2. Save it in the `images` directory
+3. Add the screenshot to this README using the following markdown syntax:
+   ```markdown
+   ![Description](images/your-screenshot-name.png)
+   ```
 
 ## Getting Started
 
