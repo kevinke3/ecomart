@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomart - Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                <h1>Ecomart</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Customers</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-box"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-tags"></i>
+                        <span>Categories</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Orders</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-ticket-alt"></i>
+                        <span>Coupons</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Messages</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <h2>Dashboard</h2>
+                <div class="user-info">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="user-avatar">
+                        <span>AD</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div>
+                            <div class="stat-value">12,458</div>
+                            <div class="stat-label">Total Customers</div>
+                        </div>
+                        <div class="stat-icon customers">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div>
+                            <div class="stat-value">8,542</div>
+                            <div class="stat-label">Total Orders</div>
+                        </div>
+                        <div class="stat-icon orders">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div>
+                            <div class="stat-value">1,248</div>
+                            <div class="stat-label">Total Products</div>
+                        </div>
+                        <div class="stat-icon products">
+                            <i class="fas fa-box"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div>
+                            <div class="stat-value">$124,580</div>
+                            <div class="stat-label">Total Revenue</div>
+                        </div>
+                        <div class="stat-icon revenue">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Section -->
+            <div class="section-header">
+                <h3 class="section-title">Products</h3>
+                <div>
+                    <button class="btn btn-outline">
+                        <i class="fas fa-filter"></i>
+                        Filter
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Add Product
+                    </button>
+                </div>
+            </div>
+
+            <!-- Products Table -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Category ID</th>
+                            <th>Stock ID</th>
+                            <th>Price ID</th>
+                            <th>Status ID</th>
+                            <th>Actions ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cotton Man Shirt</td>
+                            <td>Shirt</td>
+                            <td>1200</td>
+                            <td>$345</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="actions">
+                                <div class="action-btn"><i class="fas fa-edit"></i></div>
+                                <div class="action-btn"><i class="fas fa-trash"></i></div>
+                                <div class="action-btn"><i class="fas fa-eye"></i></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Retino Multi Snookers</td>
+                            <td>Shoe</td>
+                            <td>3800</td>
+                            <td>$2200</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                            <td class="actions">
+                                <div class="action-btn"><i class="fas fa-edit"></i></div>
+                                <div class="action-btn"><i class="fas fa-trash"></i></div>
+                                <div class="action-btn"><i class="fas fa-eye"></i></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tollored blond waistcoat</td>
+                            <td>Waistcoat</td>
+                            <td>3400</td>
+                            <td>$2200</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="actions">
+                                <div class="action-btn"><i class="fas fa-edit"></i></div>
+                                <div class="action-btn"><i class="fas fa-trash"></i></div>
+                                <div class="action-btn"><i class="fas fa-eye"></i></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Linen Blend Blazer</td>
+                            <td>Co-Oud Set</td>
+                            <td>2200</td>
+                            <td>$4400</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                            <td class="actions">
+                                <div class="action-btn"><i class="fas fa-edit"></i></div>
+                                <div class="action-btn"><i class="fas fa-trash"></i></div>
+                                <div class="action-btn"><i class="fas fa-eye"></i></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cotton Man Tahir</td>
+                            <td>Palo</td>
+                            <td>264</td>
+                            <td>$1800</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="actions">
+                                <div class="action-btn"><i class="fas fa-edit"></i></div>
+                                <div class="action-btn"><i class="fas fa-trash"></i></div>
+                                <div class="action-btn"><i class="fas fa-eye"></i></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Open Book Top</td>
+                            <td>Top</td>
+                            <td>692</td>
+                            <td>$2400</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="actions">
+                                <div class="action-btn"><i class="fas fa-edit"></i></div>
+                                <div class="action-btn"><i class="fas fa-trash"></i></div>
+                                <div class="action-btn"><i class="fas fa-eye"></i></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Polo Sweet Shirt</td>
+                            <td>Palo</td>
+                            <td>438</td>
+                            <td>$4300</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                            <td class="actions">
+                                <div class="action-btn"><i class="fas fa-edit"></i></div>
+                                <div class="action-btn"><i class="fas fa-trash"></i></div>
+                                <div class="action-btn"><i class="fas fa-eye"></i></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cotton kettweer</td>
+                            <td>Kettweer</td>
+                            <td>8500</td>
+                            <td>$2200</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="actions">
+                                <div class="action-btn"><i class="fas fa-edit"></i></div>
+                                <div class="action-btn"><i class="fas fa-trash"></i></div>
+                                <div class="action-btn"><i class="fas fa-eye"></i></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Linen Blend Blazer</td>
+                            <td>Co-Oud Set</td>
+                            <td>2200</td>
+                            <td>$4400</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                            <td class="actions">
+                                <div class="action-btn"><i class="fas fa-edit"></i></div>
+                                <div class="action-btn"><i class="fas fa-trash"></i></div>
+                                <div class="action-btn"><i class="fas fa-eye"></i></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bag with comporimo</td>
+                            <td>Bag</td>
+                            <td>648</td>
+                            <td>$3300</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                            <td class="actions">
+                                <div class="action-btn"><i class="fas fa-edit"></i></div>
+                                <div class="action-btn"><i class="fas fa-trash"></i></div>
+                                <div class="action-btn"><i class="fas fa-eye"></i></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-footer">
+                    <div>1st 10 of 220 entries</div>
+                    <div class="pagination">
+                        <div class="page-btn"><i class="fas fa-chevron-left"></i></div>
+                        <div class="page-btn active">1</div>
+                        <div class="page-btn">2</div>
+                        <div class="page-btn">3</div>
+                        <div class="page-btn">4</div>
+                        <div class="page-btn"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
